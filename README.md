@@ -43,8 +43,7 @@ puts either_only(15) # => false
 puts either_only(30) # => false
 ```
 
-### Description 
-Larger Number
+### Larger Number:
 Write a method larger_number(num1, num2) that takes in two numbers and returns the larger of the two numbers. 
 
 ### Syntax: 
@@ -61,5 +60,23 @@ end
 puts larger_number(42, 28)   # => 42
 puts larger_number(99, 100)  # => 100
 ``` 
+### Longer String: 
+Write a method longer_string(str1, str2) that takes in two strings and returns the longer of the two strings. In the case of a tie, the method should return the first string.
+
+### Syntax: 
+
+```jsx 
+def longer_string(str1, str2)
+ if str1.length >= str2.length # remember about the greater than/ less than or equal sign 
+   return str1 
+ else 
+  return str2 
+ end 
+end
+
+puts longer_string("app", "academy") # => "academy"
+puts longer_string("summer", "fall") # => "summer"
+puts longer_string("hello", "world") # => "hello"
+```
 
 
