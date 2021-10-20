@@ -118,3 +118,30 @@ puts word_check("contraption") # => "long"
 puts word_check("fruit")       # => "short"
 puts word_check("puzzle")      # => "medium"
 ```
+
+## Loops 
+
+### Count E 
+Write a method count_e(word) that takes in a string word and returns the number of e's in the word
+
+```jsx 
+def count_e(word)
+  count = 0  /// counting the number of e's starting at 0 with the variable count 
+  
+  i = 0 /// counting the index of the letter word starting at 0 
+  
+  while i < word.length 
+    char = word[i] /// while loop to go through every index letter of the given word until the word ends 
+    
+  if char == "e"  /// if statement to go count each 'e' and count them 
+    count += 1 
+  end 
+    
+  i += 1 /// going through every index 
+  end 
+  return count
+end
+
+puts count_e("movie") # => 1
+puts count_e("excellent") # => 3
+```
