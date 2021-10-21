@@ -171,3 +171,25 @@ puts count_a("bike")         # => 0
 puts count_a("Arthur")       # => 1
 puts count_a("Aardvark")     # => 3
 ```
+
+### Sum Nums 
+Write a method sum_nums(max) that takes in a number max and returns the sum of all numbers from 1 up to and including max. 
+
+```jsx 
+def sum_nums(max)
+ sum = 0 # adding numbers 
+ 
+  i = 1 # starting the addition with one 
+  
+  while i <= max # while loop to put a stopping point 
+    sum += i # adding the starting with each i 
+    
+    i += 1 # iteration until reach max 
+  end 
+  
+  return sum # returning the sum 
+end
+
+puts sum_nums(4) # => 10, because 1 + 2 + 3 + 4 = 10
+puts sum_nums(5) # => 15
+```
