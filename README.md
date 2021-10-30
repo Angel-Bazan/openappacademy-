@@ -243,10 +243,10 @@ where every element of the original array is multiplied by 2.
 
 ```jsx 
 def doubler(numbers)
-  double_num = []
+  double_num = [] ///creating a new array 
   
-  i = 0 
-  while i < numbers.length 
+  i = 0 ///starting at index 0 
+  while i < numbers.length ///stopping at the last index
    
     double_num << numbers[i] * 2
     
@@ -266,17 +266,17 @@ new array where every word from the original array has an exclamation point afte
 
 ```jsx 
 def yell(words)
- scream = []
+ scream = [] //creating new array 
   
   i = 0 
    while i < words.length 
-     word = words[i]
-     scream_word = word + '!'
-     scream << scream_word
+     word = words[i] // creating a new variable for every index from words 
+     scream_word = word + '!' //creating a new variable that has the addition of that word plus the exclamation point 
+     scream << scream_word ///shoveling that new variable into the new array 
      
-     i += 1
+     i += 1 //iterating to every single array 
    end
-  return scream
+  return scream /// return the new array 
 end
 
 print yell(["hello", "world"]) # => ["hello!", "world!"]
