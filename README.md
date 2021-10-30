@@ -260,3 +260,26 @@ print doubler([1, 2, 3, 4]) # => [2, 4, 6, 8]
 puts
 print doubler([7, 1, 8])    # => [14, 2, 16]
 ```
+## Yell
+Write a method yell(words) that takes in an array of words and returns a
+new array where every word from the original array has an exclamation point after it.
+
+```jsx 
+def yell(words)
+ scream = []
+  
+  i = 0 
+   while i < words.length 
+     word = words[i]
+     scream_word = word + '!'
+     scream << scream_word
+     
+     i += 1
+   end
+  return scream
+end
+
+print yell(["hello", "world"]) # => ["hello!", "world!"]
+puts
+print yell(["code", "is", "cool"]) # => ["code!", "is!", "cool!"]
+```
