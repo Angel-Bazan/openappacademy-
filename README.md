@@ -326,3 +326,24 @@ print range(2, 7)   # => [2, 3, 4, 5, 6, 7]
 puts
 print range(13, 20) # => [13, 14, 15, 16, 17, 18, 19, 20]
 ```
+## Odd Range 
+Write a method odd_range(min, max) that takes in two numbers min and max. The method should return an array containing all odd numbers from min to max (inclusive).
+
+```jsx 
+def odd_range(min, max)
+ odd = []
+  i = min 
+  
+  while i <= max 
+    if i % 2 != 0 
+      odd << i 
+    end 
+    i += 1 
+  end 
+  return odd
+end
+
+print odd_range(11, 18) # => [11, 13, 15, 17]
+puts
+print odd_range(3, 7)   # => [3, 5, 7]
+```
