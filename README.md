@@ -347,3 +347,23 @@ print odd_range(11, 18) # => [11, 13, 15, 17]
 puts
 print odd_range(3, 7)   # => [3, 5, 7]
 ```
+## Reverse Range 
+Write a method reverse_range(min, max) that takes in two numbers min and max. The function should return an array containing all numbers from min to max in reverse order. The min and max should be excluded from the array
+
+```jsx
+def reverse_range(min, max)
+reverse = []
+  i = max -1
+  
+  while i > min
+
+     reverse << i 
+    i-=1 
+  end 
+  return reverse
+end
+
+print reverse_range(10, 17) # => [16, 15, 14, 13, 12, 11]
+puts
+print reverse_range(1, 7)   # => [6, 5, 4, 3, 2]
+```
