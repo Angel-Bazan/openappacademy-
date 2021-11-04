@@ -304,3 +304,25 @@ print even_nums(10) # => [0, 2, 4, 6, 8, 10]
 puts
 print even_nums(5)  # => [0, 2, 4]
 ```
+
+## Range 
+Write a method range(min, max) that takes in two numbers min and max. The method should return an array containing all numbers from min to max inclusive.
+
+```jsx 
+def range(min, max)
+  list = []
+  i = min 
+  
+  while i <= max 
+    list << i 
+  
+    
+    i+=1
+  end 
+  return list 
+end
+
+print range(2, 7)   # => [2, 3, 4, 5, 6, 7]
+puts
+print range(13, 20) # => [13, 14, 15, 16, 17, 18, 19, 20]
+```
