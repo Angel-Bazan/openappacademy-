@@ -367,3 +367,29 @@ print reverse_range(10, 17) # => [16, 15, 14, 13, 12, 11]
 puts
 print reverse_range(1, 7)   # => [6, 5, 4, 3, 2]
 ```
+## First Half 
+Write a method first_half(array) that takes in an array and returns a new array containing the first half of the elements in the array. If there is an odd number of elements, return the first half including the middle element.
+
+```jsx 
+def first_half(array)
+ half = [] 
+  i = 0 
+  
+  while i < (array.length / 2.0)
+  ele = array[i] 
+    half << ele 
+    
+  i+=1 
+  end 
+  return half 
+end
+
+print first_half(["Brian", "Abby", "David", "Ommi"]) # => ["Brian", "Abby"]
+puts
+print first_half(["a", "b", "c", "d", "e"])          # => ["a", "b", "c"]
+```
+
+
+
+
+
