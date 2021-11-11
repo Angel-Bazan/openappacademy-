@@ -461,3 +461,21 @@ print select_long_words(["what", "are", "we", "eating", "for", "dinner"]) # => [
 puts
 print select_long_words(["keep", "coding"])                               # => ["coding"]
 ```
+
+## Sum Elements
+Write a method sum_elements(arr1, arr2) that takes in two arrays. The method should return a new array containing the results of adding together corresponding elements of the original arrays. You can assume the arrays have the same length.
+
+```jsx 
+def sum_elements(arr1, arr2)
+  sums = [] 
+  i = 0 
+  
+  while i < arr1.length 
+    newArr = arr1[i] + arr2[i] 
+    
+end
+
+print sum_elements([7, 4, 4], [3, 2, 11])                            # => [10, 6, 15]
+puts
+print sum_elements(["cat", "pizza", "boot"], ["dog", "pie", "camp"]) # => ["catdog", "pizzapie", "bootcamp"]
+```
