@@ -500,3 +500,20 @@ print fizz_buzz(20) # => [4, 6, 8, 16, 18]
 puts
 print fizz_buzz(15) # => [4, 6, 8]
 ```
+
+## To Initials
+Write a method to_initials that takes in a person's name string and returns a string representing their initials.
+
+```jsx 
+def to_initials(name)
+names = name.split(" ") 
+initials = " " 
+names.each { |n| initials += n[0] }
+return initials 
+
+end
+
+puts to_initials("Kelvin Bridges")      # => "KB"
+puts to_initials("Michaela Yamamoto")   # => "MY"
+puts to_initials("Mary La Grange")      # => "MLG"
+```
