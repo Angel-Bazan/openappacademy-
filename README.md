@@ -674,3 +674,22 @@ puts is_valid_email("jdoe42@gmail.com") # => false
 puts is_valid_email("jdoegmail.com")    # => false
 puts is_valid_email("az@email")         # => false
 ```
+
+## Reverse Words
+Write a method reverse_words that takes in a sentence string and returns the sentence with the order of the characters in each word reversed. Note that we need to reverse the order of characters in the words, do not reverse the order of words in the sentence.
+
+```jsx 
+def reverse_words(sent)
+  parts = sent.split(" ")
+  new_arr = [] 
+  
+  parts.each { |word| new_arr << word.reverse } 
+  new_sent = new_arr.join(" ") 
+  
+  return new_sent
+      
+end
+
+puts reverse_words('keep coding') # => 'peek gnidoc'
+puts reverse_words('simplicity is prerequisite for reliability') # => 'yticilpmis si etisiuqererp rof ytilibailer'
+```
